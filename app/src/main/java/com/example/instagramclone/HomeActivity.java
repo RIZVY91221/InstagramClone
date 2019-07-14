@@ -1,6 +1,8 @@
 package com.example.instagramclone;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,29 +10,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
 import com.parse.ParseUser;
 
 public class HomeActivity extends AppCompatActivity {
-    private TextView textView;
-    private Button btn_logout;
+
+    private Toolbar toolbar;
+    private ViewPager viewPager;
+    private TabLayout tabLayout;
+    private TabAdapter tabAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-        textView=(TextView)findViewById(R.id.textView);
+        toolbar=findViewById(R.id.my_Toolbar);
+        setSupportActionBar(toolbar);
 
+        viewPager=findViewById(R.id.viewPager);
+        tabAdapter=new TabAdapter(getSupportFragmentManager());
+        viewPager.setAdapter(tabAdapter);
 
-        textView.setText("Welcome " +ParseUser.getCurrentUser().get("username"));
-        btn_logout=(Button)findViewById(R.id.button_logout);
+        tabLayout=findViewById(R.id.tabs);
+        tabLayout.setupWithViewPager(viewPager,false);
 
-        btn_logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(HomeActivity.this,MainActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
 }

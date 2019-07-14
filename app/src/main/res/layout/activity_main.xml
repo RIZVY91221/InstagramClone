@@ -20,7 +20,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/instagram" />
+        app:srcCompat="@drawable/instagram"
+        />
 
     <EditText
         android:id="@+id/edt_name"

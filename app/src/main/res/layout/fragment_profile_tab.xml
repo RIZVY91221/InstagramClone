@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileTab">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/btnEditProfile"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button"
+        android:text="Edit Prifle " />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_view"
+        />
+    <TextView
+        android:id="@+id/text_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bio"
+        android:textSize="25dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_view"
+
+        />
+    <TextView
+        android:id="@+id/text_profession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="profession"
+        android:textSize="25dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_view"
+
+        />
+    <TextView
+        android:id="@+id/text_hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"
+        android:textSize="25dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_view"
+
+        />
+
+    />
+    <TextView
+        android:id="@+id/text_sport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hobbies"
+        android:textSize="25dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/text_view"
+
+        />
+</FrameLayout>
